@@ -1709,4 +1709,7 @@ a {
 .overflow-hidden {
   overflow: hidden; }
 
+
+.cover-overlay{background-color: rgba(0, 0, 200, 0.7);
+filter:blur(20px);}
 /*# sourceMappingURL=style.css.map */
