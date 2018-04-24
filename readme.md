@@ -4,6 +4,5 @@
 ## [website source](https://github.com/VCAS18/vcas18.github.io)
 ## Designed by
 [Prateek Raj Gautam](mailto:prateekrajgautam@gmail.com)
-[connect at facebook](https://fb.com/prateekrajgatuam)
 
-https://github.com/VCAS18/vcas18.github.io
+[connect at facebook](https://fb.com/prateekrajgatuam)
