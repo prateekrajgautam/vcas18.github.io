@@ -1,3 +1,3 @@
 git add .
-git commit -m"minor change auto"
+git commit -m"template download form own server"
 git push
