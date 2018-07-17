@@ -43,31 +43,111 @@
 
 
   <script>
-    $(document).ready(function(){
-      $("#noticebutton").click(function(){
+    $(document).ready(function () {
+      $("#noticebutton").click(function () {
         $("#noticebutton").hide();
       });
     });
+
+
+}
   </script>
+
+
+  <style>
+    #notice {
+      width: 10px;
+      color: white;
+      background-color: red;
+
+      -webkit-animation-name: colorchange;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 6s;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-iteration-count: infinite;
+      /* Safari 4.0 - 8.0 */
+      animation-name: colorchange;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+    }
+
+    /* Safari 4.0 - 8.0 */
+
+    @-webkit-keyframes colorchange {
+      0% {
+        background-color: red;
+      }
+      25% {
+        background-color: violet;
+      }
+      50% {
+        background-color: blue;
+      }
+      75% {
+        background-color: green;
+      }
+      100% {
+        background-color: red;
+      }
+    }
+
+    /* Standard syntax */
+
+    @keyframes colorchange {
+      0% {
+        background-color: red;
+      }
+      25% {
+        background-color: violet;
+      }
+      50% {
+        background-color: blue;
+      }
+      75% {
+        background-color: green;
+      }
+      100% {
+        background-color: red;
+      }
+    }
+  </style>
 
 
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
-    <div id="noticebutton" style="width:100%">
-
-        <button style="width:100%"  class="btn btn-primary">
-          Paper submission date extended up to August 15, 2018.
+  <div >
+        <button  id="notice" style="width:100vw;" class="btn">
+          <b>Paper submission date extended up to August 15, 2018.</b>
         </button>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
 
 
-
-
-        <br>
+    <br>
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <!--<img src="https://raw.githubusercontent.com/VCAS18/vcas18.github.io/master/assets/springerlogo.png" width="60px" " alt="VCAS">-->VCAS</a>
@@ -158,7 +238,7 @@
               <br />November 29 to December 1, 2018</p>
             <a href="/vcas2018/submitpapers " onclick="return confirm(
           'Papers must be written in English and be formatted according to the Springer authoring guidelines. Full papers should not exceed eight pages.') "
-              role="button " class=" font-weight-bold btn smoothscroll pb_outline-light btn-xl p-4 rounded-1 pb_letter-spacing-2
+              role="button" class=" font-weight-bold btn smoothscroll pb_outline-light btn-xl p-4 rounded-1 pb_letter-spacing-2
           display-4 " style=" ">Submit paper</a>
 
             <span style="padding:20px"> </span>
@@ -930,7 +1010,9 @@
 
       <div class="row ">
         <div class="col-md-4 col-sm-12 ">Submission date</div>
-        <div class="col-md-6 col-sm-12 "><span style="color:red;"><s>July</s></span> August 15, 2018</div>
+        <div class="col-md-6 col-sm-12 ">
+          <span style="color:red;">
+            <s>July 15 </s> </span> August 15, 2018</div>
       </div>
       <div class="row ">
         <div class="col-md-4 col-sm-12 ">Acceptance notification</div>
@@ -1188,4 +1270,5 @@
     </svg>
   </div>
 </body>
+
 </html>
